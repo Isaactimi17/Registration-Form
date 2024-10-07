@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      table {
+        table-layout: fixed;
+        width: 380px;
+      }
+      hr {
+        margin-right: 232px;
+      }
+      div {
+        padding-left: 500px;
+        width: 600px;
+      }
+      th {
+        text-align: left;
+        font-size: 10px;
+      }
+      td input[type="text"] {
+        height: 35px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        padding-left: 10px;
+        width: 161px;
+      }
+      #street-address {
+        width: 350px;
+      }
+      h1 {
+        font-size: 20px;
+        padding-left: 70px;
+        font-weight: lighter;
+      }
+      p {
+        font-size: 13px;
+        margin-right: 232px;
+      }
+      select {
+        height: 40px;
+        width: 177px;
+        margin-top: -9px;
+        padding-left: 7px;
+        font-size: 10px;
+      }
+      body {
+        background-color: rgb(233, 230, 226);
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Company Registration Form</h1>
+      <p>
+        Register your business by using this form. Required fields are marked
+        with an asterisk(*)
+      </p>
+      <hr />
+      <table>
+        <tr>
+          <th>Company Name<span>*</span></th>
+          <th>Owner<span>*</span></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>Company mailing address<span>*</span></th>
+        </tr>
+        <td>
+          <input id="street-address" type="text" placeholder="Street Address" />
+        </td>
+        <tr>
+          <td><input type="text" placeholder="city" /></td>
+          <td><input type="text" placeholder="State" /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Zip Code" /></td>
+          <td>
+            <select name="country" id="country">
+              <option value="" disabled selected>country</option>
+              <option value="NG">Nigeria</option>
+              <option value="GH">Ghana</option>
+              <option value="US">USA</option>
+              <option value="SA">South-Africa</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Email<span>*</span></th>
+          <th>Phone number<span>*</span></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="" id="" /></td>
+          <td><input type="text" placeholder="### ### ####" /></td>
+        </tr>
+        <tr>
+          <th>Nominal capital</th>
+          <th>Industry<span>*</span></th>
+        </tr>
+        <tr>
+          <td><input type="text" name="" id="" /></td>
+          <td>
+            <select name="industry" id="industry">
+              <option value="" disabled selected>*Please Select*</option>
+              <option value="CM">Commerce</option>
+              <option value="GH">Entertainment</option>
+              <option value="US">Sports</option>
+              <option value="SA">Music</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
